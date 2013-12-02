@@ -1,0 +1,57 @@
+h1 {
+	font-family: "Verdana";
+	font-size : 25px;
+	color : black;
+}
+
+
+header{
+
+	width : 960px;
+	height : 60px;
+	border : 1px solid black;
+	margin : 0 auto;
+	background-color: #1A98BA;
+}
+
+.login{
+	/*border : 1px solid black;*/
+	position : fixed;
+	left : 825px;
+	bottom : 727px;
+}
+
+body{
+	/*background-color: ;*/
+}
+
+#cta{
+	width : 546px;
+	height : 307px;
+	border : 1px solid black;
+	position : fixed;
+	left : 249px;
+	top : 71px;
+}
+
+.register{
+	width : 344px;
+	height : 294px;
+	border : 1px solid black;
+	margin : 0 auto;
+	padding : 10px;
+	/*float : right;*/
+	position : fixed;
+	right : 274px;
+	top : 71px;
+}
+
+#about{
+	width : 905px;
+	height : 186px;
+	border : 1px solid black;
+	margin : 0 auto;
+	position : fixed;
+	top : 500px;
+	left : 259px;
+}
