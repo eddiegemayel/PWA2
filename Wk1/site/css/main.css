@@ -11,6 +11,8 @@ header{
 	height : 60px;
 	border : 1px solid black;
 	margin : 0 auto;
+	position : relative;
+	top : -9px;
 	background-color: #1A98BA;
 }
 
@@ -18,11 +20,11 @@ header{
 	/*border : 1px solid black;*/
 	position : fixed;
 	left : 825px;
-	bottom : 727px;
+	bottom : 736px;
 }
 
 body{
-	/*background-color: ;*/
+	background-color: #D2DBDB;
 }
 
 #cta{
