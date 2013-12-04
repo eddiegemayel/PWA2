@@ -19,6 +19,11 @@ p{
 	line-height : 2;
 }
 
+.loginButton{
+	position : relative;
+	left : 550px;
+	bottom : 8px;
+}
 
 #break{
 	width : 895px;
@@ -43,6 +48,13 @@ header{
 
 #password{
 	border : 2px solid #D2DBDB;
+}
+
+.signupButton{
+	position : relative;
+	top : 148px;
+	left : 55px;
+
 }
 
 .login{
@@ -81,20 +93,20 @@ body{
 #email{
 	position : absolute;
 	width : 140px;
-	left : 190px;
+	left : 185px;
 	top : 100px;
 
 }
 
 #password1{
 	position : absolute;
-	left : 190px;
+	left : 185px;
 	top : 140px;
 }
 
 #password2{
 	position : absolute;
-	left : 190px;
+	left : 185px;
 	top : 180px;
 	
 }
