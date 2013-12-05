@@ -1,3 +1,10 @@
+body{
+	background : url(images/old_map1.png);
+}
+
+
+
+
 h1 {
 	font-family: "Verdana";
 	font-size : 25px;
@@ -14,7 +21,7 @@ h2{
 p{
 	font-family : "Verdana";
 	font-style : "Regular";
-	font-size : 12; 	
+	font-size : 12px; 	
 	text-indent: 3em;
 	line-height : 2;
 }
@@ -64,9 +71,7 @@ header{
 	bottom : 736px;
 }
 
-body{
-	background-color: #D2DBDB;
-}
+
 
 #cta{
 	width : 570px;
@@ -137,7 +142,7 @@ body{
 
 #about{
 	width : 913px;
-	height : 270px;
+	height : 190px;
 	border : 1px solid black;
 	margin : 0 auto;
 	position : fixed;
