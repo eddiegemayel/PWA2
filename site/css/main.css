@@ -1,9 +1,6 @@
 body{
-	background : url(images/old_map1.png);
+	/*background : url(images/old_map1.png);*/
 }
-
-
-
 
 h1 {
 	font-family: "Verdana";
@@ -71,8 +68,6 @@ header{
 	bottom : 736px;
 }
 
-
-
 #cta{
 	width : 570px;
 	height :315px;
@@ -116,7 +111,6 @@ header{
 	
 }
 
-
 .emailLabel{
 	position : absolute;
 	left : 130px;
@@ -124,6 +118,7 @@ header{
 	font-family : Verdana;
 	font-size : 15;
 }
+
 .password1Label{
 	position : absolute;
 	left : 100px;
@@ -131,6 +126,7 @@ header{
 	font-family : Verdana;
 	font-size : 15;
 }
+
 .password2Label{
 	position : absolute;
 	left : 30px;
@@ -149,5 +145,52 @@ header{
 	top : 400px;
 	left : 269px;
 	padding-left: 5px;
-	
+	background-color : #D2DBDB;
 }
+
+
+#headquarters{
+	height : 221px;
+	width : 297px;
+	border : 1px solid black;
+	position : relative;
+	left : 231px;
+	background-color : #D2DBDB;
+}
+
+#projectList{
+	width : 545px;
+	height : 520px;
+	border : 1px solid black;
+	position : relative;
+	top : -398px;
+	left : 640px;
+	background-color : #D2DBDB;
+}
+#newProject{
+	width : 297px;
+	height : 285px;
+	background-color : #D2DBDB;
+}
+
+.logoutAffordance{
+	font-family : "Myriad Pro";
+	font-size : 21px;
+	text-decoration : underline;
+	position : relative;
+	left : 450px;
+	bottom : 20px;
+}
+.myProfileButton{
+	position : relative;
+	left : 420px;
+	bottom : 10px;
+}
+
+
+
+
+
+
+
+

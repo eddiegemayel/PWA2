@@ -1,0 +1,31 @@
+h1 {
+	font-family: "Verdana";
+	font-size : 25px;
+	color : #050505;
+	/*text-decoration : underline;*/
+}
+
+h2{
+	font-family : "Verdana";
+	font-size : 21px;
+	color : #050505;
+}
+
+p{
+	font-family : "Verdana";
+	font-style : "Regular";
+	font-size : 12px; 	
+	text-indent: 3em;
+	line-height : 2;
+}
+
+header{
+
+	width : 960px;
+	height : 60px;
+	border : 1px solid black;
+	margin : 0 auto;
+	position : relative;
+	top : -9px;
+	background-color: #1A98BA;
+}
