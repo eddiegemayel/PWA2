@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8"/>
-		<title>Profile Home</title>
+		<title>Project Headquarters</title>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<header>
-			<img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo">
-			<img class="myProfileButton"src="images/myprofile.png" width=100 height=35>
-			<span class="logoutAffordance">Logout</span>
+			<a href="index.html"><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<a href="myprofile.html"><img class="myProfileButton"src="images/myprofile.png" width=100 height=35></a>
+			<a href="index.html"><span class="logoutAffordance">Logout</span></a>
 		</header>
 		<div id="headquarters">
-			<h1></h1>
-			<p></p>
-			<p></p>
-			<p></p>
+			<h1>Headquarters</h1>
+			<hr noshade class="headquartersBreak">
+			<p class="headquarterText">Here, you can add, remove, and edit projects. Each project has tasks that 
+			you set to complete. Click on a project to reach it’s tasks, or to drag and drop them in an order you want.</p>
+			<p class="headquarterText">Active Projects : 2</p>
+			<p class="headquarterText">Today's Date : 12/11/13</p>
 		</div>
 		<div id="newProject">
-			<h1></h1>
+			<h1>Add New Project</h1>
+			<hr noshade class="newProjectsBreak">
 			<form>
-				<label>Name:</label>
-				<input class="name" type="text">
+				<label class="nameLabel">Name:</label>
+				<input class="nameInput" type="text">
+			<form>
 			</form>
+				<label class="descriptionLabel">Description:</label>
+				<textarea class="textArea" rows=4 columns=20></textarea>
 			<form>
-				<label>Description:</label>
-				<textarea rows=4 columns=20></textarea>
 			</form>
+				<label class="dueDateLabel">Due Date:</label>
+				<input class="dateInput" type="text" placeholder="MM/DD/YYYY">
 			<form>
-				<label>Due Date:</label>
-				<input class="date" type="text" placeholder="MM/DD/YYYY">
 			</form>
-			<form>
-				<label>Status:</label>
-				<select>
+				<label class="statusLabel">Status:</label>
+				<select class="choices">
 					<option>On Time</option>
 					<option>Urgent</option>
 					<option>Delayed</option>
 					<option>Finished</option>
 				</select>
-			</form>
 			<form>
-				<label>Priority:</label>
-				<input class="priority" type="text">
 			</form>
+				<label class="priorityLabel">Priority:</label>
+				<input class="priorityInput" type="text">
+			</form>
+			<img class="projectAdd" src="images/add.png" width=100 height=35 alt="Add New Project"/>
 		</div>
 		<div id="projectList">
+			<h1>Projects</h1>
+			<hr noshade class="projectsBreak">
 			<div class="slot1">
 				<h2>Project 1</h2>
-				<h3>(Priority if entered)</h3>
-				<p>Date Due : 12/12/13</p>
-				<p>Description right here...</p>
-				<p>Tasks to Complete : 9</p>
-				<img/>
-				<img/>
-				<img/>
+				<p class="priority1">(Priority if entered)</p>
+				<p class="slot1Text">Date Due : 12/12/13</p>
+				<p class="slot1Text">Description right here...</p>
+				<p class="slot1Text">Tasks to Complete : 9</p>
+				<img class="slot1pic" src="images/urgentIcon.png" width=83 height=75/>
+				<img class="slot1edit"src="images/edit.png" width=80 height=23/>
+				<img class="slot1delete"src="images/delete.png" width=81 height=24/>
 			</div>
 			<div class="slot2">
+				<a href="taskHome.html"><h2>Project 2</h2></a>
+				<p class="priority2">(Priority if entered)</p>
+				<p class="slot2Text">Date Due : 12/14/13</p>
+				<p class="slot2Text">Description right here...</p>
+				<p class="slot2Text">Tasks to Complete : 1</p>
+				<a href="taskHome.html"><img class="slot2pic"src="images/onTrack.png" width=83 height=75/></a>
+				<img class="slot2edit"src="images/edit.png" width=80 height=23/>
+				<img class="slot2delete"src="images/delete.png" width=81 height=24/>
 			</div>
 			<div class="slot3">
+				<h2>Project 3</h2>
+				<p class="priority3">(Priority if entered)</p>
+				<p class="slot3Text">Date Due : 12/09/13</p>
+				<p class="slot3Text">Description right here...</p>
+				<p class="slot3Text">Tasks to Complete : 0</p>
+				<img class="slot3pic"src="images/completed.png" width=83 height=75/>
+				<img class="slot3edit"src="images/edit.png" width=80 height=23/>
+				<img class="slot3delete"src="images/delete.png" width=81 height=24/>
 			</div>
 		</div>
-		
-		
 	</body>
 </html>
