@@ -1,0 +1,251 @@
+<div>
+	<script type="text/template" id="landingPageTemplate">
+			<header>
+			<a><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<form class="login" method="post">
+				<input id="username" type="text" placeholder="username" name="username">
+				<input id="password" type="password" placeholder="password" name="password">
+			</form>
+
+		<button id="loginButton"><a>Log In</a></button>
+
+		</header>
+		
+		<div id="cta">
+			<img src="images/cta.png" width=558 height=313 >
+		</div>
+		
+		<div class="register">
+				<h1>Quick and Easy Sign Up!</h1>
+				<hr noshade>
+				<form method="post" class="emailForm">
+					<label class="reglabel"for="email">Email:</label>
+					<input class="email" type="email" name="email" placeholder="example@gmail.com">
+				</form>
+		
+				<form class="usernameForm">
+					<label class="reglabel"for="username">Username:</label>
+					<input class="usernameReg" type="text" name="usernameInput">
+				</form>
+		
+				<form class="passwordForm">
+					<label class="reglabel"for="password">Password:</label>
+					<input class="passwordReg" type="password" name="passwordReg">				
+				</form>
+			<button class="signupButton">Sign Up!</button>
+
+				
+		</div>
+		
+		<div id="about">
+			<h2>What Are We About?</h2>
+			<hr noshade id="aboutBreak">
+			<p>You have a lot of projects, you should keep them organized. But how is a busy person like you supposed to coordinate <em>all</em> of your upcoming tasks? Have us do it for you. With our customizable options and easy to learn interface, it makes regulating your work life
+			way easier. </p>
+			<p>And the best part of all? It’s <strong>100%</strong> free. What are you waiting for? Sign up for an account today, and never turn in another project 
+			late again.</p>
+
+		</div>
+		</div>
+	</script>
+	
+	<script type="text/template" id="appHomeTemplate">
+			<div id="wrap">
+		<header>
+			<a ><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<a  class="myProfileButton">My Profile</a>
+			<a ><span class="logoutAffordance">Logout</span></a>
+		</header>
+		<div id="headquarters">
+			<h1>Headquarters</h1>
+			<hr noshade class="headquartersBreak">
+			<p class="headquarterText">Here, you can add, remove, and edit projects. Each project has tasks that 
+			you set to complete. Click on a project to reach it’s tasks, or to drag and drop them in an order you want.</p>
+			<p class="headquarterText">Today's Date : 12/11/13</p>
+		</div>
+		<div id="newProject">
+			<h1>Add New Project</h1>
+			<hr noshade class="newProjectsBreak">
+			<form class="addnew">
+				<label class="nameLabel1">Name:</label>
+				<input class="nameInput1" type="text">
+			</form>
+			<form class="descripform">
+				<label class="descriptionLabel1">Description:</label>
+				<textarea class="textArea1" rows=4 columns=20></textarea>
+			</form>
+			<form class="addnew">
+				<label class="dueDateLabel1">Due Date:</label>
+				<input class="dateInput1" type="text" placeholder="MM/DD/YYYY">
+			</form>
+			<form class="addnew">
+				<label class="statusLabel1">Status:</label>
+				<select class="choices1">
+					<option>On Time</option>
+					<option>Urgent</option>
+					<option>Delayed</option>
+					<option>Finished</option>
+				</select>
+			</form > 
+			<form class="addnew">
+				<label class="priorityLabel">Priority:</label>
+				<input class="priorityInput1" type="text">
+			</form>
+			
+			<a href="#" class="projectAdd1">Add</a>
+
+		</div>
+		<div id="projectList">
+			<h1>Projects</h1>
+			<hr noshade class="projectsBreak">
+			<div class="slot1">
+				<a class="toTasks"><h2>Project 1</h2></a>
+				<p class="priority1">(Priority if entered)</p>
+				<p class="slot1Text">Date Due : 12/12/13</p>
+				<p class="slot1Text">Description right here...</p>
+				<p class="slot1Text">Tasks to Complete : 9</p>
+				<img class="slot1pic" src="images/urgentIcon.png" width=83 height=75/>
+				<img class="slot1edit"src="images/edit.png" width=80 height=23/>
+				<img class="slot1delete"src="images/delete.png" width=81 height=24/>
+			</div>
+			<div class="slot2">
+				<a class="toTasks"><h2>Project 2</h2></a>
+				<p class="priority2">(Priority if entered)</p>
+				<p class="slot2Text">Date Due : 12/14/13</p>
+				<p class="slot2Text">Description right here...</p>
+				<p class="slot2Text">Tasks to Complete : 1</p>
+				<a href="taskHome.html"><img class="slot2pic"src="images/onTrack.png" width=83 height=75/></a>
+				<img class="slot2edit"src="images/edit.png" width=80 height=23/>
+				<img class="slot2delete"src="images/delete.png" width=81 height=24/>
+			</div>
+			<div class="slot3">
+				<a class="toTasks"><h2>Project 3</h2></a>
+				<p class="priority3">(Priority if entered)</p>
+				<p class="slot3Text">Date Due : 12/09/13</p>
+				<p class="slot3Text">Description right here...</p>
+				<p class="slot3Text">Tasks to Complete : 0</p>
+				<img class="slot3pic"src="images/completed.png" width=83 height=75/>
+				<img class="slot3edit"src="images/edit.png" width=80 height=23/>
+				<img class="slot3delete"src="images/delete.png" width=81 height=24/>
+			</div>
+		</div>
+		</div>
+
+	</script>
+	
+	<script type="text/template" id="taskHomeTemplate">		<header>
+			<a ><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<a class="myProfileButton">My Profile</a>
+			<a ><span class="logoutAffordance">Logout</span></a>
+		</header>
+		<div id="newTask">
+			<h1>Add New Task</h1>
+			<hr noshade class="newTasksBreak">
+			<form>
+				<label class="nameLabel">Name:</label>
+				<input class="nameInput" type="text">
+			<form>
+			</form>
+				<label class="descriptionLabel">Description:</label>
+				<textarea class="textArea"rows=4 columns=20 ></textarea>
+			<form>
+			</form>
+				<label class="dueDateLabel">Due Date:</label>
+				<input class="dateInput" type="text" placeholder="MM/DD/YYYY">
+			<form>
+			</form>
+				<label class="statusLabel">Status:</label>
+				<select class="choices">
+					<option>On Time</option>
+					<option>Urgent</option>
+					<option>Delayed</option>
+					<option>Finished</option>
+				</select>
+			<form>
+			</form>
+				<label class="priorityLabel">Priority:</label>
+				<input class="priorityInput" type="text">
+			</form>
+			<a  class="projectAdd">Add</a>
+		</div>
+		<div id="taskList">
+			<h1>Project 1 / Tasks</h1>
+			<hr noshade class="tasksBreak">
+			<div class="task1">
+				<h2>Task 1</h2>
+				<p class="priority1">(Priority if entered)</p>
+				<p class="task1Text">Date Due : 12/12/13</p>
+				<p class="task1Text">Description right here...</p>
+				<img class="task1pic" src="images/urgentIcon.png" width=83 height=75/>
+				<img class="task1edit"src="images/edit.png" width=80 height=23/>
+				<img class="task1delete"src="images/delete.png" width=81 height=24/>
+
+			</div>
+			<div class="task2">
+				<h2>Task 2</h2>
+				<p class="priority2">(Priority if entered)</p>
+				<p class="task2Text">Date Due : 12/14/13</p>
+				<p class="task2Text">Description right here...</p>
+				<img class="task2pic"src="images/completed.png" width=83 height=75/>
+				<img class="task2edit"src="images/edit.png" width=80 height=23/>
+				<img class="task2delete"src="images/delete.png" width=81 height=24/>
+			</div>
+			<div class="task3">
+				<h2>Task 3</h2>
+				<p class="priority3">(Priority if entered)</p>
+				<p class="task3Text">Date Due : 12/09/13</p>
+				<p class="task3Text">Description right here...</p>
+				<img class="task3pic"src="images/completed.png" width=83 height=75/>
+				<img class="task3edit"src="images/edit.png" width=80 height=23/>
+				<img class="task3delete"src="images/delete.png" width=81 height=24/>
+			</div>
+		</div>
+</script>
+	
+	<script type="text/template" id="profilePageTemplate">
+				<header>
+			<a><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<a  class="myProfileButton">My Profile</a>
+			<a ><span class="logoutAffordance">Logout</span></a>
+		</header>
+		<div class="myProfile">
+			<h1>My Profile</h1>
+			<hr noshade class="profileBreak">
+			<p>
+				Welcome, user! Here you can edit your	profile information. Find coworkers and add
+				them to your friends list to coordinate projects together.
+			</p>
+			<form class="">
+				<label class="profileNameLabel">Your Name:</label>
+				<input class="profileNameInput" type="text">
+			</form>
+			<form class="descripform">
+				<label class="describeLabel">Description:</label>
+				<textarea class="describeText"rows=4 columns=20 ></textarea>
+			</form>
+			<form>
+				<label class="companyLabel">Company:</label>
+				<input class="companyInput" type="text">
+			</form>
+			<a  class="updateProfile">Update</a>
+
+		</div>
+		<div class="friendList">
+			<h1>Friends</h1>
+			<div class="friend1">
+				<img class="profilepic1" src="images/profilePic.png" width=83 height=76/>
+				<h2 class="f1">Friend 1</h2>
+				<p class="des">Description Here</p>
+				<img class="slotDelete" src="images/delete.png"/>
+			</div>
+			<div class="friend2">
+				<img class="profilepic2" src="images/profilePic.png" width=83 height=76/>
+				<h2 class="f1">Friend 2</h2>
+				<p class="des">Description Here</p>
+				<img class="slotDelete" src="images/delete.png"/>
+			</div>
+		</div>
+
+	</script>
+	
+</div>
