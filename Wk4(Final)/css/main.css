@@ -1,0 +1,825 @@
+body{
+	height : 1000px;
+	overflow : hidden;
+}
+
+label{
+/* 	position : relative; */
+	font-family : "Verdana";
+	font-style : "Regular";
+	font-size : 12px;
+}
+h1 {
+	font-family: "Verdana";
+	font-size : 25px;
+	color : #050505;
+	/*text-decoration : underline;*/
+}
+
+h2{
+	font-family : "Verdana";
+	font-size : 21px;
+	color : #050505;
+}
+
+p{
+	font-family : "Verdana";
+	font-style : "Regular";
+	font-size : 12px; 	
+	text-indent: 3em;
+	line-height : 2;
+}
+a{
+	text-decoration : none;
+}
+/*Landing Page -------------------------------------------------------------------------*/
+#loginButton{
+	position : relative;
+	left : 820px;
+	bottom : 90px;
+}
+#loginButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffed64), color-stop(1, #d49023));
+	background:-moz-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-webkit-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-o-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-ms-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:linear-gradient(to bottom, #ffed64 5%, #d49023 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed64', endColorstr='#d49023',GradientType=0);
+	background-color:#ffed64;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #d4b254;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:19px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+#loginButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d49023), color-stop(1, #ffed64));
+	background:-moz-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-webkit-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-o-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-ms-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:linear-gradient(to bottom, #d49023 5%, #ffed64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d49023', endColorstr='#ffed64',GradientType=0);
+	background-color:#d49023;
+}
+
+#aboutBreak{
+	width : 895px;
+	position : relative;
+	right : 5px;
+}
+
+header{
+	width : 960px;
+	height : 60px;
+	border : 1px solid black;
+	margin : 0 auto;
+	position : relative;
+	top : -9px;
+	background-color: #1A98BA;
+}
+
+#username{
+	border : 2px solid #D2DBDB;
+}
+
+#password{
+	border : 2px solid #D2DBDB;
+}
+
+.login{
+	/*border : 1px solid black;*/
+	/*float : right;*/
+	position : relative;
+	left : 550px;
+	bottom :40px;
+}
+
+#cta{
+	width : 570px;
+	height :315px;
+	/*border : 1px solid black;*/
+	position : fixed;
+	left : 262px;
+	top : 71px;
+}
+
+.register{
+	width : 344px;
+	background-color : #D2DBDB;/*#57BEC9;*/
+	height : 294px;
+	border : 1px solid black;
+	margin : 0 auto;
+	padding : 5px;
+	/*float : right;*/
+	position : fixed;
+	right : 240px;
+	top : 71px;
+}
+
+.reglabel{
+	text-align: right;
+	display: block;
+		width : 120px;
+	float: left;
+}
+
+form{
+	width: 344px;
+	height: 40px;
+	
+}
+
+.email{
+	/* 
+width : 149px;
+	overflow: hidden;
+	clear: both;
+
+	float: right;
+ */
+}
+.signupButton{
+	position : relative;
+	top : 30px;
+	left : 80px;
+}
+.signupButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffed64), color-stop(1, #d49023));
+	background:-moz-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-webkit-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-o-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-ms-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:linear-gradient(to bottom, #ffed64 5%, #d49023 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed64', endColorstr='#d49023',GradientType=0);
+	background-color:#ffed64;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #d4b254;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:23px;
+	padding:16px 47px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.signupButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d49023), color-stop(1, #ffed64));
+	background:-moz-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-webkit-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-o-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-ms-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:linear-gradient(to bottom, #d49023 5%, #ffed64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d49023', endColorstr='#ffed64',GradientType=0);
+	background-color:#d49023;
+}
+#about{
+	width : 913px;
+	height : 190px;
+	border : 1px solid black;
+	margin : 0 auto;
+	position : fixed;
+	top : 400px;
+	left : 282px;
+	padding-left: 5px;
+	background-color : #D2DBDB;
+}
+
+/*Project Main Page---------------------------------------------------------------------*/
+.logoutAffordance{
+	font-family : "Myriad Pro";
+	font-size : 21px;
+	text-decoration : underline;
+	position : relative;
+	left : 430px;
+	bottom : 20px;
+}
+.myProfileButton{
+	position : relative;
+	left : 390px;
+	bottom : 20px;
+}
+.myProfileButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffed64), color-stop(1, #d49023));
+	background:-moz-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-webkit-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-o-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-ms-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:linear-gradient(to bottom, #ffed64 5%, #d49023 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed64', endColorstr='#d49023',GradientType=0);
+	background-color:#ffed64;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #d4b254;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:19px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myProfileButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d49023), color-stop(1, #ffed64));
+	background:-moz-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-webkit-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-o-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-ms-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:linear-gradient(to bottom, #d49023 5%, #ffed64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d49023', endColorstr='#ffed64',GradientType=0);
+	background-color:#d49023;
+}
+
+#headquarters{
+	height : 221px;
+	width : 297px;
+	padding : 4px;
+	border : 1px solid black;
+	position : relative;
+	left : 233px;
+	background-color : #D2DBDB;
+}
+
+.headquarterText{
+	line-height : 1.8;
+	text-indent: 1em;
+}
+
+#projectList{
+	width : 545px;
+	height : 530px;
+	border : 1px solid black;
+	position : relative;
+	top : -526px;
+	left : 645px;
+	background-color : #D2DBDB;
+	padding : 2px;
+}
+#newProject{
+	width : 297px;
+	height : 285px;
+	background-color : #D2DBDB;
+	border : 1px solid black;
+	position : relative;
+	left : 233px;
+	top : 10px;
+	padding : 4px;
+}
+.nameLabel1{
+	text-align: right;
+	display: block;
+	width : 90px;
+	height : 20px;
+	float: left;
+}
+
+.descriptionLabel1{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+
+}
+
+.dueDateLabel1{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+
+.statusLabel1{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+
+.priorityLabel1{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+.projectAdd1 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffed64), color-stop(1, #d49023));
+	background:-moz-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-webkit-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-o-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-ms-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:linear-gradient(to bottom, #ffed64 5%, #d49023 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed64', endColorstr='#d49023',GradientType=0);
+	background-color:#ffed64;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #d4b254;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:19px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.projectAdd1:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d49023), color-stop(1, #ffed64));
+	background:-moz-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-webkit-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-o-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-ms-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:linear-gradient(to bottom, #d49023 5%, #ffed64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d49023', endColorstr='#ffed64',GradientType=0);
+	background-color:#d49023;
+}
+
+
+.projectAdd1{
+	position : relative;
+	left : 195px;
+	top : 0px;
+}
+
+#errorAdd{
+	color : red;
+	display : block;
+}
+
+.headquartersBreak{
+	width: 290px;
+	position : relative;
+}
+
+.newProjectsBreak{
+	width : 290px;
+	position : relative;
+}
+
+/*Here are the slots for the Project List-----------------------------------------------*/
+.priority{
+	position : relative;
+	right : 35px;
+	bottom : 20px;
+}
+
+.slot{
+	height : 100px;
+	width : 549px;
+	position : relative;
+	right : 3px;
+	bottom : 2px;
+	border : 1px solid black;
+	background-color : #60CFE2;
+}
+
+.slotText{
+	position : relative ;
+	bottom : 30px;
+	left : 20px;
+	line-height : 1;
+	position : relative;
+	left : 100px;
+	bottom : 80px;
+}
+
+.slotpic{
+	position : relative;
+	left : 330px;
+	bottom : 160px;
+}
+
+.slotedit{
+	position : relative;
+	left : 360px;
+	bottom : 205px;
+}
+.slotdelete{
+	position : relative;
+	left : 276px;
+	bottom : 165px;
+}
+
+/*Task Home ----------------------------------------------------------------------------*/
+
+#taskList{
+	width : 545px;
+	height : 530px;
+	border : 1px solid black;
+	position : relative;
+	top : -540px;
+	left : 645px;
+	background-color : #D2DBDB;
+	padding : 2px;
+}
+#newTask{
+	width : 297px;
+	height : 530px;
+	background-color : #D2DBDB;
+	border : 1px solid black;
+	position : relative;
+	left : 233px;
+	top : 0px;
+	padding : 4px;
+}
+
+.descripform{
+	height : 80px;
+}
+
+.addnew{
+	height : 25px;
+}
+
+.nameLabel{
+	text-align: right;
+	display: block;
+	width : 105px;
+	float: left;
+}
+
+
+.descriptionLabel{
+	text-align: right;
+	display: block;
+	width : 105px;
+	float: left;
+}
+
+
+.dueDateLabel{
+	text-align: right;
+	display: block;
+	width : 105px;
+	float: left;
+}
+
+.statusLabel{
+	text-align: right;
+	display: block;
+	width : 105px;
+	float: left;
+}
+
+
+.priorityLabel{
+	text-align: right;
+	display: block;
+	width : 105px;
+	float: left;
+
+}
+.taskAdd{
+	position : relative;
+	left : 190px;
+	top : 75px;
+}
+
+.taskAdd {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffed64), color-stop(1, #d49023));
+	background:-moz-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-webkit-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-o-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:-ms-linear-gradient(top, #ffed64 5%, #d49023 100%);
+	background:linear-gradient(to bottom, #ffed64 5%, #d49023 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed64', endColorstr='#d49023',GradientType=0);
+	background-color:#ffed64;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #d4b254;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:19px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.taskAdd:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d49023), color-stop(1, #ffed64));
+	background:-moz-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-webkit-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-o-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:-ms-linear-gradient(top, #d49023 5%, #ffed64 100%);
+	background:linear-gradient(to bottom, #d49023 5%, #ffed64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d49023', endColorstr='#ffed64',GradientType=0);
+	background-color:#d49023;
+}
+.task{
+	height : 100px;
+	width : 549px;
+	position : relative;
+	right : 3px;
+	bottom : 2px;
+	border : 1px solid black;
+	background-color : #60CFE2;
+}
+
+.taskText{
+	position : relative ;
+	bottom : 30px;
+	left : 20px;
+	line-height : 1;
+	position : relative;
+	left : 100px;
+	bottom : 80px;
+}
+
+.taskpic{
+	position : relative;
+	left : 330px;
+	bottom : 135px;
+}
+
+.taskedit{
+	position : relative;
+	left : 360px;
+	bottom : 180px;
+}
+.taskdelete{
+	position : relative;
+	left : 276px;
+	bottom : 140px;
+}
+
+/*My Profile----------------------------------------------------------------------------*/
+
+.myProfile{
+	position : relative;
+	width : 298px;
+	height : 398px;
+	border : 1px solid black;
+	padding : 2px;
+	left : 233px;
+	background-color : #D2DBDB;
+}
+
+.profileNameLabel{
+	display: block;
+	text-align : right;
+	width : 105px;
+}
+
+.describeLabel{
+	display: block;
+	width : 105px;
+	float: left;
+	text-align : right;
+}
+
+.companyLabel{
+	display : block;
+	float : left;
+	width : 105px;
+	text-align : right;
+}
+
+.updateProfile{
+	position : relative;
+	left : 150px;
+	top : 0px;
+}
+.updateProfile {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #d49023));
+	background:-moz-linear-gradient(top, #ffec64 5%, #d49023 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #d49023 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #d49023 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #d49023 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #d49023 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#d49023',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:19px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.updateProfile:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d49023), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #d49023 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #d49023 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #d49023 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #d49023 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #d49023 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d49023', endColorstr='#ffec64',GradientType=0);
+	background-color:#d49023;
+}
+
+.profileBreak{
+	position : relative;
+	width : 290px;
+}
+
+.friendList{
+	width : 545px;
+	height : 530px;
+	border : 1px solid black;
+	position : relative;
+	top : -405px;
+	left : 643px;
+	background-color : #D2DBDB;
+	padding : 2px;
+}
+
+.friend1{
+	height : 100px;
+	width : 549px;
+	position : relative;
+	right : 3px;
+	bottom : 2px;
+	border : 1px solid black;
+	background-color : #60CFE2;
+}
+
+.friend2{
+	height : 100px;
+	width : 549px;
+	position : relative;
+	right : 3px;
+	bottom : 2px;
+	border : 1px solid black;
+	background-color : #60CFE2;
+}
+
+.profilepic1{
+	position : relative;
+	width : 83px;
+	height : 76px;
+}
+.profilepic2{
+	position : relative;
+	width : 83px;
+	height : 76px;
+}
+
+.slotDelete{
+	position : relative;
+	left : 420px;
+	bottom : 120px;
+}
+
+.f1{
+	position : relative;
+	left : 90px;
+	bottom : 90px;
+}
+
+.des{
+	position : relative;
+	left : 55px;
+	bottom : 110px;
+}
+
+.profileNameInput{
+	position : relative;
+	left : 105px;
+	bottom : 18px;
+}
+
+
+/* UI DIALOGs----------------------------------------------------------------------------*/
+#overlay{
+	visibility : hidden;
+}
+#dialog{
+	border-radius: 2px;
+	text-align: center;
+	background-color : #D2DBDB;
+}
+.ui-widget-content {
+	border:2px solid;
+	text-align: center;
+	background-color : #D2DBDB;
+}
+.ui-widget-header {
+    background: #1A98BA;
+    border: 1px solid black;
+    color: #fff;
+    font-weight: normal;
+}
+
+#dialog2{
+	border-radius: 2px;
+	text-align: center;
+	background-color : #D2DBDB;
+}
+
+fieldset{
+	margin : 0 auto;
+	display: block;
+}
+
+#dialog-form{
+	height : 300px;
+	width : 300px;
+}
+
+#editNameLabel{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+
+#editDescriptionLabel{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+
+#editDueDateLabel{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+
+#editStatusLabel{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+
+#editPriorityLabel{
+	text-align: right;
+	display: block;
+	width : 90px;
+	float: left;
+	height : 20px;
+}
+
+#editNameInput{
+	text-align: left;
+	display: block;
+	padding : 1px;
+}
+
+#editDescriptionInput{
+	display: block;
+	padding : 1px;
+}
+
+#editDueDateInput{
+	display: block;
+	padding : 1px;
+}
+
+#editStatusInput{
+	display: block;
+	padding : 1px;
+}
+
+#editPriorityInput{
+	display: block;
+	padding : 1px;
+}

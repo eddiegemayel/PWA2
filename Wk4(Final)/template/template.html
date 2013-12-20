@@ -1,0 +1,318 @@
+<div>
+	<!--Here are page templates for ajax calls -->
+	<script type="text/template" id="landingPageTemplate">
+			<header>
+			<a><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<form class="login" method="post">
+				<input id="username" type="text" placeholder="username" name="username">
+				<input id="password" type="password" placeholder="password" name="password">
+			</form>
+
+		<button id="loginButton"><a>Log In</a></button>
+
+		</header>
+		
+		<div id="cta">
+			<img src="images/cta.png" width=558 height=313 >
+		</div>
+		
+		<div class="register">
+				<h1>Quick and Easy Sign Up!</h1>
+				<hr noshade>
+				<form method="post" class="emailForm">
+					<label class="reglabel"for="email">Email:</label>
+					<input class="email" type="email" name="email" placeholder="example@gmail.com">
+				</form>
+		
+				<form class="usernameForm">
+					<label class="reglabel"for="username">Username:</label>
+					<input class="usernameReg" type="text" name="usernameInput">
+				</form>
+		
+				<form class="passwordForm">
+					<label class="reglabel"for="password">Password:</label>
+					<input class="passwordReg" type="password" name="passwordReg">				
+				</form>
+			<button class="signupButton">Sign Up!</button>
+
+				
+		</div>
+		
+		<div id="about">
+			<h2>What Are We About?</h2>
+			<hr noshade id="aboutBreak">
+			<p>You have a lot of projects, you should keep them organized. But how is a busy person like you supposed to coordinate <em>all</em> of your upcoming tasks? Have us do it for you. With our customizable options and easy to learn interface, it makes regulating your work life
+			way easier. </p>
+			<p>And the best part of all? It’s <strong>100%</strong> free. What are you waiting for? Sign up for an account today, and never turn in another project 
+			late again.</p>
+
+		</div>
+		</div>
+	</script>
+	
+	<script type="text/template" id="appHomeTemplate">
+			<div id="wrap">
+		<header>
+			<a ><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<a  class="myProfileButton">My Profile</a>
+			<a ><span class="logoutAffordance">Logout</span></a>
+		</header>
+		<div id="headquarters">
+			<h1>Headquarters</h1>
+			<hr noshade class="headquartersBreak">
+			<p class="headquarterText">Here, you can add, remove, and edit projects. Each project has tasks that 
+			you set to complete. Click on a project to reach it’s tasks, or to drag and drop them in an order you want.</p>
+			<p id="date"></p>
+			
+			
+			
+			
+		</div>
+		<div id="newProject">
+			<h1>Add New Project</h1>
+			<hr noshade class="newProjectsBreak">
+			<form class="addnew">
+				<label class="nameLabel1">Name:</label>
+				<input class="nameInput1" type="text">
+			</form>
+			<form class="descripform">
+				<label class="descriptionLabel1">Description:</label>
+				<textarea class="textArea1" rows=4 columns=20></textarea>
+			</form>
+			<form class="addnew">
+				<label class="dueDateLabel1">Due Date:</label>
+				<input class="dateInput1" type="text" placeholder="MM/DD/YYYY">
+			</form>
+			<form class="addnew">
+				<label class="statusLabel1">Status:</label>
+				<select class="choices1">
+					<option>On Time</option>
+					<option>Urgent</option>
+					<option>Delayed</option>
+					<option>Finished</option>
+				</select>
+			</form > 
+			<form id="last" class="addnew">
+				<label class="priorityLabel">Priority:</label>
+				<input class="priorityInput1" type="text">
+			</form>
+			
+			<a class="projectAdd1">Add</a>
+
+		</div>
+		<div id="projectList" >
+			<h1>Projects</h1>
+			<hr noshade class="projectsBreak">
+			<div id="sortable">
+				<div id="s1"class="slot">
+					<a class="toTasks"><h2 class="title">Project 1</h2></a>
+					<p class="priority">(Priority if entered)</p>
+					<p id="duedate1"class="slotText">Date Due : 12/12/13</p>
+					<p id="description1" class="slotText">Description right here...</p>
+					<p class="slotText">Tasks to Complete : 9</p>
+					<img class="slotpic" src="images/urgentIcon.png" width=83 height=75/>
+					<img id="edit" class="slotedit"src="images/edit.png" width=80 height=23/>
+					<img id="project1Delete" class="slotdelete"src="images/delete.png" width=81 height=24/>
+				</div>
+				<div id="s2" class="slot">
+					<a class="toTasks"><h2 class="title">Project 2</h2></a>
+					<p class="priority">(Priority if entered)</p>
+					<p class="slotText">Date Due : 12/14/13</p>
+					<p class="slotText">Description right here...</p>
+					<p class="slotText">Tasks to Complete : 1</p>
+					<img class="slotpic"src="images/onTrack.png" width=83 height=75/>
+					<img id="edit" class="slotedit"src="images/edit.png" width=80 height=23/>
+					<img id="project2Delete" class="slotdelete"src="images/delete.png" width=81 height=24/>
+				</div>
+				<div id="s3" class="slot">
+					<a class="toTasks"><h2 class="title">Project 3</h2></a>
+					<p class="priority">(Priority if entered)</p>
+					<p class="slotText">Date Due : 12/09/13</p>
+					<p class="slotText">Description right here...</p>
+					<p class="slotText">Tasks to Complete : 0</p>
+					<img class="slotpic"src="images/completed.png" width=83 height=75/>
+					<img id="edit" class="slotedit"src="images/edit.png" width=80 height=23/>
+					<img id="project3Delete" class="slotdelete"src="images/delete.png" width=81 height=24/>
+				</div>
+				</div><!--end of sortable-->
+
+			</div><!--end of project list-->
+			
+		</div><!--end of wrapper-->
+		
+		<!--Pop up modals -->
+		<div id="overlay">
+			<div id="dialog" title="Confirm Deletion">
+				<p>Are you sure you want to delete this project?</p>
+			</div>
+		</div>
+		<div id="overlay">
+			<div id="dialog2" title="Confirm Add">
+				<p>Are you sure you want to add this project?</p>
+			</div>
+		</div>
+		
+		<div id="overlay">
+			<div id="dialog-form" title="Edit Project">
+  			<p class="validateTips">All form fields are required.</p>
+ 
+  			<form>
+ 			 <fieldset>
+   			 <label id="editNameLabel">Project Name:</label>
+   			 <input id="editNameInput" type="text">
+		   	 <label id="editDescriptionLabel">Description</label>
+		   	 <textarea id="editDescriptionInput" rows=4 columns=10></textarea>
+  			 <label id="editDueDateLabel">Due Date:</label>
+  			 <input id="editDueDateInput" type="text">
+  			 <label id="editStatusLabel">Status:</label>
+				<select id="editStatusInput">
+					<option>On Time</option>
+					<option>Urgent</option>
+					<option>Delayed</option>
+					<option>Finished</option>
+				</select>
+				<label id="editPriorityInput">Priority:</label>
+				<input type="text">
+
+  			 
+ 					 </fieldset>
+  						</form>
+				</div>
+		</div>
+
+		<script>$("#sortable").sortable();</script>
+		
+	</script>
+	
+	<script type="text/template" id="taskHomeTemplate">		<header>
+			<a ><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<a class="myProfileButton">My Profile</a>
+			<a ><span class="logoutAffordance">Logout</span></a>
+		</header>
+		<div id="newTask">
+			<h1>Add New Task</h1>
+			<hr noshade class="newTasksBreak">
+			<form>
+				<label class="nameLabel">Name:</label>
+				<input class="nameInput" type="text">
+			</form>
+			<form>
+				<label class="descriptionLabel">Description:</label>
+				<textarea class="textArea"rows=4 columns=20 ></textarea>
+			</form>
+			<form>
+				<label class="dueDateLabel">Due Date:</label>
+				<input class="dateInput" type="text" placeholder="MM/DD/YYYY">
+			</form>
+			<form>
+				<label class="statusLabel">Status:</label>
+				<select class="choices">
+					<option>On Time</option>
+					<option>Urgent</option>
+					<option>Delayed</option>
+					<option>Finished</option>
+				</select>
+			</form>
+			<form id="last">
+				<label class="priorityLabel">Priority:</label>
+				<input class="priorityInput" type="text">
+			</form>
+			<a  class="taskAdd">Add</a>
+		</div>
+		<div id="taskList">
+			<h1>Project 1 / Tasks</h1>
+			<hr noshade class="tasksBreak">
+			<div id="sortablee">
+				<div id="t1" class="task">
+					<h2>Task 1</h2>
+					<p class="priority">(Priority if entered)</p>
+					<p class="taskText">Date Due : 12/12/13</p>
+					<p class="taskText">Description right here...</p>
+					<img class="taskpic" src="images/urgentIcon.png" width=83 height=75/>
+					<img class="taskedit"src="images/edit.png" width=80 height=23/>
+					<img id="task1Delete"class="taskdelete"src="images/delete.png" width=81 height=24/>
+				</div>
+				<div id="t2" class="task">
+					<h2>Task 2</h2>
+					<p class="priority">(Priority if entered)</p>
+					<p class="taskText">Date Due : 12/14/13</p>
+					<p class="taskText">Description right here...</p>
+					<img class="taskpic"src="images/completed.png" width=83 height=75/>
+					<img class="taskedit"src="images/edit.png" width=80 height=23/>
+					<img id="task2Delete" class="taskdelete"src="images/delete.png" width=81 height=24/>
+				</div>
+				<div id="t3" class="task">
+					<h2>Task 3</h2>
+					<p class="priority">(Priority if entered)</p>
+					<p class="taskText">Date Due : 12/09/13</p>
+					<p class="taskText">Description right here...</p>
+					<img class="taskpic"src="images/completed.png" width=83 height=75/>
+					<img class="taskedit"src="images/edit.png" width=80 height=23/>
+					<img id="task3Delete" class="taskdelete"src="images/delete.png" width=81 height=24/>
+				</div>
+			</div>
+		</div>
+				<div id="overlay">
+			<div id="dialog" title="Confirm Deletion">
+				<p>Are you sure you want to delete this task?</p>
+			</div>
+		</div>
+		<script>$("#sortablee").sortable();</script>
+
+</script>
+	
+	<script type="text/template" id="profilePageTemplate">
+				<header>
+			<a><img src="images/NeverLate44.png" width=297 height=56 title="NeverLate!" alt="Logo"></a>
+			<a  class="myProfileButton">My Profile</a>
+			<a ><span class="logoutAffordance">Logout</span></a>
+		</header>
+		<div class="myProfile">
+			<h1>My Profile</h1>
+			<hr noshade class="profileBreak">
+			<p>
+				Welcome, user! Here you can edit your	profile information, find coworkers and add
+				them to your friends list to coordinate projects together.
+			</p>
+			<form>
+				<label class="profileNameLabel">Your Name:</label>
+				<input class="profileNameInput" type="text">
+			</form>
+			<form class="descripform">
+				<label class="describeLabel">Description:</label>
+				<textarea class="describeText"rows=4 columns=20 ></textarea>
+			</form>
+			<form>
+				<label class="companyLabel">Company:</label>
+				<input class="companyInput" type="text">
+			</form>
+			<a  class="updateProfile">Update</a>
+
+		</div>
+		<div class="friendList">
+			<h1>Friends</h1>
+			<div id="sortableee">
+				<div class="friend1">
+					<img class="profilepic1" src="images/profilePic.png" width=83 height=76/>
+					<h2 class="f1">Friend 1</h2>
+					<p class="des">Description Here</p>
+					<img id="friendDelete1" class="slotDelete" src="images/delete.png"/>
+				</div>
+				<div class="friend2">
+					<img class="profilepic2" src="images/profilePic.png" width=83 height=76/>
+					<h2 class="f1">Friend 2</h2>
+					<p class="des">Description Here</p>
+					<img id="friendDelete2" class="slotDelete" src="images/delete.png"/>
+				</div>
+			</div>
+		</div>
+		<div id="overlay">
+			<div id="dialog" title="Confirm Deletion">
+				<p>Are you sure you want to delete this friend?</p>
+			</div>
+		</div>
+		<script>$("#sortableee").sortable();</script>
+
+	</script>
+	
+</div>
